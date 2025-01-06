@@ -46,6 +46,8 @@ The objective of this project is to create an engaging and interactive quiz appl
 - **Libraries/Frameworks**:
   - Bootstrap for responsive design.
   - jQuery for DOM manipulation (optional).
+ 
+    ![Screenshot of My Project](task1.3.png)
   
 ## Implementation Details
 
