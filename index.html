@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #quiz-container {
+      background-color: #1e1e2f;
+      border: 2px solid #bb86fc;
+      border-radius: 15px;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 20px rgba(187, 134, 252, 0.3);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .question {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #bb86fc;
+    }
+
+    .options button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      background-color: #292942;
+      color: #ffffff;
+      border: 2px solid #bb86fc;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease-in-out;
+      transform-origin: center;
+    }
+
+    .options button:hover {
+      background-color: #bb86fc;
+      color: #121212;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(187, 134, 252, 0.4);
+    }
+
+    .results {
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    .results h2 {
+      margin-bottom: 10px;
+      color: #bb86fc;
+    }
+
+    .results p {
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .results button {
+      background-color: #bb86fc;
+      color: #121212;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .results button:hover {
+      background-color: #cf96ff;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="quiz-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
